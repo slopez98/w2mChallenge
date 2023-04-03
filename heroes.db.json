@@ -1,0 +1,21 @@
+{
+    "heroes": [
+      { "id": 1, "name": "A-Bomb", "full-name": "Richard Milhouse Jones" },
+      { "id": 64, "name": "Batgirl", "full-name": "Mary Elizabeth Kane" },
+      { "id": 157, "name": "Captain Marvel", "full-name": "Carol Danvers" },
+      { "id": 226, "name": "Doctor Strange", "full-name": "Stephen Strange" },
+      { "id": 225, "name": "Doctor Octopus", "full-name": "Otto Octavius" },
+
+      { "id": 236, "name": "Elastigirl", "full-name": "Helen Parr" },
+      { "id": 263, "name": "Flash", "full-name": "Jay Garrick" },
+      { "id": 275, "name": "Gamora", "full-name": "Gamora Zen Whoberi Ben Titan" },
+      { "id": 289, "name": "Goku", "full-name": "Kakarot" },
+      { "id": 476, "name": "Mr Incredible", "full-name": "Robert Parr" },
+
+      { "id": 540, "name": "Rambo", "full-name": "John Rambo" },
+      { "id": 579, "name": "Scarlet Witch", "full-name": "Wanda Maximoff" },
+      { "id": 643, "name": "Supergirl", "full-name": "Kara Zor-El" },
+      { "id": 667, "name": "Tigra", "full-name": "Greer Grant Nelson" },
+      { "id": 729, "name": "Yoda", "full-name": "Yoda" }
+    ]
+  }
