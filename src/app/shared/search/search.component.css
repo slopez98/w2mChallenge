@@ -1,0 +1,12 @@
+.form, .field  {
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: var(--primary-color);
+}
+.field_label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

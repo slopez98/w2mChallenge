@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: center;
+}
+
+.box_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px teal;
+    width: 50%;
+    padding: 20px;
+    height: max-content;
+    border-radius: 20px;
+}
+
+.box_search {
+    width: 100%;
+}
+
+.box_list {
+    min-height: 300px;
+    width: 100%;
+}
+
+.box_adding {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.box_paginator {
+    color: teal;
+    background-color: var(--primary-color);
+    border: solid 2px teal;
+}
+
+.mat-mdc-paginator-icon {
+    fill: teal !important;
+    color: teal;
+}
+.box_notFound {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.box_notFound > p {
+    color: teal;
+    font-weight: 500;
+    font-size: 16px;
+}
+.img_notFound {
+    width: 100%;
+    height: 100px;
+}

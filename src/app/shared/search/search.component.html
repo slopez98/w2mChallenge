@@ -1,0 +1,9 @@
+<form class="form" [formGroup]="searchForm" (keyup.enter)="handleSearchEvent($event)">
+    <mat-form-field class="field">
+        <mat-label class="field_label">
+            <mat-icon>search</mat-icon>
+            <span>Ingresa el nombre</span>
+        </mat-label>
+        <input type="text" formControlName="searchValue" matInput (ngModelChange)="handleSearchEvent($event)">
+    </mat-form-field>
+</form>

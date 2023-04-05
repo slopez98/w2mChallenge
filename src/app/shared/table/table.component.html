@@ -1,0 +1,36 @@
+<ng-container *ngIf="heroesList">
+    <table  mat-table [dataSource]="heroesList">
+
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let item"> {{item.id}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Héroe </th>
+            <td mat-cell *matCellDef="let item"> {{item.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="realName">
+            <th mat-header-cell *matHeaderCellDef> Nombre real </th>
+            <td mat-cell *matCellDef="let item"> {{item.realName}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef></th>
+            <td mat-cell *matCellDef="let item" class="box_tab_actions">
+                <button mat-icon-button class="button_actions" color="accent" (click)="handleEditItem(item.id)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button class="button_actions" color="accent" (click)="handleDeleteItem(item)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let item; columns: displayedColumns;"></tr>
+
+    </table>
+
+</ng-container>

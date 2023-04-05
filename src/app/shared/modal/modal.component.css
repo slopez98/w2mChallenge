@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: teal;
+    color: var(--primary-color);
+}
+
+.box_actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.button_confirm {
+    background-color: var(--primary-color);
+    color: teal;
+}
+
+.box_heroe {
+    width: 100%;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+}

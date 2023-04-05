@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    display: grid;
+    place-items: center;
+}
+
+.box_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px teal;
+    width: 40%;
+    padding: 20px 30px;
+    height: max-content;
+    border-radius: 20px;
+}
+
+.box_list {
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.box_adding {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+span {
+    width: 50%;
+}
+
+.form_content {
+    display: flex;
+    gap: 7px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box_title {
+    color: teal;
+    padding-bottom: 10px;
+}
+.button_width, .mat-mdc-button:not(:disabled){
+    width: 100%;
+    background-color: var(--primary-color);
+    border: solid 1px teal;
+    color: teal;
+}

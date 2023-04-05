@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="box_main">
+        <div class="box_search">
+            <app-search (searchEvent)="handleSearchEvent($event)"></app-search>
+        </div>
+        <div class="box_list">
+            <ng-container *ngIf="heroesList">
+                <ng-container *ngIf="heroesListOrdered.length >= 1; else notValue">
+                    <app-table [heroesList]="heroesListOrdered" (deleteHeroEvent)="handleOpenModalDelete($event)"
+                        (updateHeroEvent)="handleUpdateRedirectHero($event)"></app-table>
+                    <mat-paginator class="box_paginator" [length]="heroesList.length"
+                        [pageSize]="infoDataPagination.pageSize" [pageIndex]="infoDataPagination.pageIndex"
+                        (page)="handleChangeOrderedList($event)">
+                    </mat-paginator>
+                </ng-container>
+                <ng-template #notValue>
+                    <div class="box_notFound">
+                        <img class="img_notFound" src="../../../assets/undraw_no_data_re_kwbl.svg" alt="no data">
+                        <p>No se encontraron resultados</p>
+                    </div>
+                </ng-template>
+
+            </ng-container>
+        </div>
+        <div class="box_adding">
+            <app-button [title]="'Agregar Héroe'" (clickEvent)="handleNavigateNewHero($event)"></app-button>
+        </div>
+    </div>
+
+</div>

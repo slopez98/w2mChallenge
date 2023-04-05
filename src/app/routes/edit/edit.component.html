@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="box_main">
+        <h2 class="box_title">¡Edita tu Héroe!</h2>
+        <div class="box_list">
+            <form *ngIf="formData" [formGroup]="formData" class="form_content" (keyup.enter)="handleUpdateHero(true)">
+                <mat-form-field appearance="fill">
+                    <mat-label>Ingresa el nombre</mat-label>
+                    <input formControlName="name" matInput required>
+                    <mat-error *ngIf="formData.get('name')?.hasError('required')">
+                        Ingresa un valor
+                    </mat-error> </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Ingresa el nombre real</mat-label>
+                    <input formControlName="realName" matInput required>
+                    <mat-error *ngIf="formData.get('realName')?.hasError('required')">
+                        Ingresa un valor
+                    </mat-error>
+                </mat-form-field>
+            </form>
+        </div>
+        <div class="box_adding">
+            <span>
+                <a mat-button class="button_basic" [routerLink]="['/home']">Volver</a>
+            </span>
+            <span>
+                <app-button [title]="'Editar Héroe'" (clickEvent)="handleUpdateHero($event)"></app-button>
+            </span>
+        </div>
+    </div>
+</div>

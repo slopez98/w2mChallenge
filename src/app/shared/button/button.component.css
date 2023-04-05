@@ -1,0 +1,7 @@
+.button_width,
+.mat-mdc-raised-button:not(:disabled) {
+    width: 100%;
+    background-color: teal;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 2px var(--black-color);
+}

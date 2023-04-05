@@ -1,0 +1,17 @@
+table {
+    height: 100%;
+    background-color: var(--primary-color);
+    color: teal;
+}
+.mdc-data-table__header-cell, .mdc-data-table__cell {
+    color: teal;
+    border-bottom-color: teal
+}
+.box_tab_actions {
+    display: flex;
+    gap: 0 2px;
+    height: 100%;
+}
+.button_actions {
+    color: teal;
+}
